@@ -396,6 +396,7 @@ padding-top: 100px;
   max-width: 1100px;
   margin: 0 auto;
   text-align: left;
+  border-top: 1px solid rgba(255,255,255,.08);
 }
 
 .footer-content h3 {
@@ -427,8 +428,14 @@ padding-top: 100px;
   color: var(--accent);
 }
 
+.footer-divider {
+    height: 1px;
+    background: rgba(255,255,255,.1);
+    margin: 25px 0;
+}
+
 .copyright {
   color: #94a3b8;
   font-size: 0.9rem;
-  margin-top: 35px;
+  margin-top: 20px;
 }
