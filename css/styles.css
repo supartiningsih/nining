@@ -74,27 +74,78 @@ a:hover {
 
 }
 
+.logo{
+
+    font-size:2rem;
+    font-weight:800;
+
+    color:var(--accent);
+
+    letter-spacing:-2px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    transition: all .25s ease;
+
+}
+
+.logo:hover{
+
+    color:var(--accent-hover);
+
+    transform:translateY(-2px);
+
+}
+
+.logo::after{
+    content:"_";
+    color:var(--accent);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+
+    50%{
+        opacity:0;
+    }
+
+}
+
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 70px;
+    box-sizing: border-box;   /* tambahkan ini */
+
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.70);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow: 0 5px 25px rgba(0,0,0,.04);
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 38px;
 
-  list-style: none;
-  margin: 0;
-  padding: 22px 24px;
+    display:flex;
+    gap:42px;
 
-  background-color: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(10px);
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
 }
 
 nav li {
@@ -102,6 +153,7 @@ nav li {
   position: static;
   padding: 0;
 }
+
 
 nav ul li a {
   position: relative;
@@ -113,20 +165,22 @@ nav ul li a {
   text-decoration: none;
 
   padding: 8px 0;
-  transition: color 0.3s ease;
+
+  transition: all .25s ease;
 }
 
 nav ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
-  width: 0;
-  height: 2px;
+    width: 0;
+    height: 2px;
 
-  background-color: var(--accent);
-  transition: width 0.3s ease;
+    background-color: var(--accent);
+
+    transition: .25s ease;
 }
 
 nav ul li a:hover {
