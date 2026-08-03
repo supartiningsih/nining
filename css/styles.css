@@ -429,15 +429,11 @@ padding-top: 100px;
 }
 
 
-.footer-divider {
-    height: 1px;
-    background: rgba(255,255,255,.15);
-    margin: 20px 0;
+.copyright{
+    border-top:1px solid rgba(255,255,255,.12);
+    padding-top:20px;
+    margin-top:25px;
+    color:#94a3b8;
+    font-size:.9rem;
 
-}
-
-.copyright {
-  color: #94a3b8;
-  font-size: 0.9rem;
-  margin-top: 20px;
 }
