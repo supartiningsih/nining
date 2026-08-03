@@ -133,9 +133,11 @@ padding-top: 100px;
   margin: 0px auto auto auto;
 }
 
-.bottom-container { /*checked*/
-  background-color: #BDDDD1;
-
+.bottom-container {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 50px 0;
+  margin-top: 80px;
 }
 
 .portfolio {
@@ -182,26 +184,6 @@ padding-top: 100px;
   transform: scale(1.7);
   animation-direction: alternate-reverse;
 }
-
-.bottom-cloud {
-  position: absolute;
-  width: 10%;
-  left: 20%;
-  top: 20%;
-}
-
-.top-cloud {
-  position: absolute;
-  width: 10%;
-  right: 20%;
-  top: 15%;
-}
-
-.header-img {
-  width: 45%;
-  margin: 0 0 0 0;
-}
-
 
 
 .profile{ /*checked*/
