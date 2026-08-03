@@ -10,9 +10,9 @@
 }
 
 body {
-  color: #40514E;
-  background-color: #F9ECEC;
-  margin: 0px;
+  color: var(--primary);
+  background-color: var(--background);
+  margin: 0;
   text-align: center;
   font-family: 'Alata', sans-serif;
 }
