@@ -1,3 +1,14 @@
+:root {
+  --background: #f7f8fc;
+  --surface: #ffffff;
+  --primary: #1e293b;
+  --secondary: #64748b;
+  --accent: #c15f7c;
+  --accent-hover: #9f4564;
+  --soft-accent: #f6e5eb;
+  --border: #e2e8f0;
+}
+
 body {
   color: #40514E;
   background-color: #F9ECEC;
