@@ -483,6 +483,42 @@ nav li {
   animation: blink 1s infinite;
 }
 
+nav ul li a {
+  position: relative;
+  display: inline-block;
+
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  padding: 8px 0;
+
+  transition: all .25s ease;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--accent);
+
+    transition: .25s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
 @keyframes blink {
   50% {
     opacity: 0;
