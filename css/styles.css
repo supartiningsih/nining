@@ -391,23 +391,20 @@ padding-top: 100px;
 /* TOP Menu */
 
 .btn-menu {
-  -webkit-border-radius: 9;
-  -moz-border-radius: 9;
-  border-radius:20px;
-  font-family: 'Alata', sans-serif;
-  font-weight: bold;
-  color: #ffffff;
-  font-size: 16px;
-  background: #FAAB78;
-  padding: 10px 30px 10px 30px;
+  background: transparent;
+  border-radius: 0;
+  color: var(--primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 0;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .btn-menu:hover {
-  background: #2A764C;
-  text-decoration: none;
-  color: #ABC4AA;
-
+  background: transparent;
+  color: var(--accent);
 }
 
 .bottom-container{
