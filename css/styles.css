@@ -18,10 +18,10 @@ body {
 }
 
 h1 {
-  font-size: 9.5em;
+  font-size: clamp(3rem, 7vw, 5rem);
   color: var(--accent);
   margin: 50px auto 0 auto;
-  font-family: 'Qwitcher Grypen', cursive;
+  font-family: 'Paytone One', sans-serif;
 }
 
 h2 {
