@@ -207,9 +207,10 @@ padding-top: 100px;
 
 
 .skills {
-  text-align: left;
-  width: 70%;
-  margin: 0px auto 100px auto;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .skill-row {
