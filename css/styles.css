@@ -52,16 +52,14 @@ p {
 }
 
 
-hr {
-  width: 8%;
-  border: none;
-  border-top-style: dotted;
-  border-width: thick;
-  background-color: white;
-  border-color: #BDDDD1;
-  margin:100px auto;
-}
 
+
+hr {
+  width: 60px;
+  border: none;
+  border-top: 4px solid var(--accent);
+  margin: 30px auto;
+}
 
 a {
   font-size: 1.3em;
@@ -193,30 +191,6 @@ padding-top: 100px;
 }
 
 
-.profile{ /*checked*/
-  text-align: left;
-  width: 70%;
-  margin: 0px auto 100px auto;
-  padding-top: 50px
-}
-
-.profile-img { /*checked*/
-  float: left;
-  width: 35%;
-  padding: 90px 30px 0px 0px;
-}
-
-
-.skills {
-    text-align: left;
-    width: 70%;
-    margin: 0 auto;
-    padding-bottom: 40px;
-}
-
-.skill-row {
-    margin: 30px auto;
-}
 
 
 .skill-img {
@@ -224,6 +198,28 @@ padding-top: 100px;
   float: right;
 }
 
+.profile {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0 20px;
+}
+
+.skills {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0 50px;
+}
+
+.skill-row {
+  text-align: left;
+  margin: 30px auto;
+}
+
+.skill-row:last-child {
+  margin-bottom: 0;
+}
 
 .hobbies-row {
   width: 70%;
