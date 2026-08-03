@@ -59,8 +59,9 @@ hr {
   border-width: thick;
   background-color: white;
   border-color: #BDDDD1;
-  margin: 30px auto 30px auto;
+  margin:100px auto;
 }
+
 
 a {
   font-size: 1.3em;
