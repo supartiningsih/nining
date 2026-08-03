@@ -385,11 +385,7 @@ padding-top: 100px;
 }
 
 .bottom-container{
-    background:linear-gradient(
-    180deg,
-    #111827 0%,
-    #172033 100%
-    );
+    background:#0f172a;
     margin-top:80px;
     padding: 40px 0;
 
@@ -446,7 +442,7 @@ padding-top: 100px;
 }
 
 .copyright{
-    border-top:1px solid #374151;
+    border-top:1px solid #ffffff;
     padding-top:20px;
     margin-top:25px;
     color:#94a3b8;
