@@ -416,21 +416,30 @@ padding-top: 100px;
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
+
 .footer-links a {
-  color: #e2e8f0;
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .3s;
+
 }
 
 .footer-links a:hover {
   color: var(--accent);
 }
 
+.footer-links i{
+    font-size:1.1rem;
+
+}
 
 .copyright{
     border-top:1px solid rgba(255,255,255,.12);
