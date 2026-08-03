@@ -201,75 +201,6 @@ a:hover {
 
 
 
-.logo-linkedin {
-  width: 17%;
-  position: absolute;
-  left: 37%;
-  pointer-events: auto;
-}
-
-.logo-linkedin2 {
-  width: 17%;
-  position: absolute;
-  left: 37%;
-}
-
-.logo-linkedin2:hover {
-  opacity: 0;
-  transition-duration: 2s;
-}
-
-.logo-ig {
-  width: 17%;
-  position: absolute;
-  left: 40%;
-}
-
-.logo-ig2 {
-  width: 17%;
-  position: absolute;
-  left: 40%;
-}
-
-.logo-ig2:hover {
-  opacity: 0;
-  transition-duration: 2s;
-}
-
-.logo-git {
-  width: 17%;
-  position: absolute;
-  left: 43%;
-}
-
-.logo-git2 {
-  width: 17%;
-  position: absolute;
-  left: 43%;
-}
-
-.logo-git2:hover {
-  opacity: 0;
-  transition-duration: 2s;
-}
-
-.logo-yt {
-  width: 17%;
-  position: absolute;
-  left: 46%;
-}
-
-.logo-yt2 {
-  width: 17%;
-  position: absolute;
-  left: 46%;
-}
-
-.logo-yt2:hover {
-  opacity: 0;
-  transition-duration: 2s;
-}
-
 .btn {
   background: #BDDDD1;
   background-image: -webkit-linear-gradient(top, #BDDDD1, #568679);
@@ -390,7 +321,7 @@ a:hover {
   max-width: 1100px;
 
   margin: 0 auto;
-  padding: 80px 0 20px;
+  padding: 120px 0 20px;
 
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
