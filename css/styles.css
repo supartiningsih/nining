@@ -399,9 +399,10 @@ padding-top: 100px;
 }
 
 .footer-content h3 {
-  color: #ffffff;
-  font-size: 1.6rem;
-  margin: 0 0 10px;
+    color: var(--accent);
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .footer-role {
