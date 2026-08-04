@@ -80,9 +80,11 @@ a:hover {
 }
 
 
-
-
-
+.section-icon{
+    color: var(--accent);
+    margin-right: 10px;
+    font-size: 0.9em;
+}
 
 
 .portfolio {
@@ -129,8 +131,6 @@ a:hover {
   transform: scale(1.7);
   animation-direction: alternate-reverse;
 }
-
-
 
 
 .skill-img {
