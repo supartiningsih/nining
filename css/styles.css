@@ -79,10 +79,12 @@ a:hover {
 }
 
 
+
 .section-icon{
-    color:var(--accent);
-    margin-right:10px;
-    font-size:.85em;
+    color: var(--primary);
+    font-size: 0.72em;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .portfolio {
