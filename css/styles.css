@@ -525,3 +525,7 @@ nav ul li a:hover::after {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
