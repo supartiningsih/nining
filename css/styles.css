@@ -9,6 +9,11 @@
   --border: #e2e8f0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   color: var(--primary);
   background-color: var(--background);
@@ -525,7 +530,4 @@ nav ul li a:hover::after {
   }
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px;
-}
+
