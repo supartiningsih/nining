@@ -32,12 +32,11 @@ h1 {
 }
 
 h2{
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 20px;
+    font-size:2.2rem;
+    font-weight:700;
+    color:var(--primary);      /* bukan accent lagi */
+    margin-bottom:20px;
 }
-
 
 h3{
     font-size: 1.4rem;
@@ -81,11 +80,10 @@ a:hover {
 
 
 .section-icon{
-    color: var(--accent);
-    margin-right: 10px;
-    font-size: 0.9em;
+    color:var(--accent);
+    margin-right:10px;
+    font-size:.85em;
 }
-
 
 .portfolio {
   width: 70%;
