@@ -324,20 +324,25 @@ a:hover {
 }
 
 .journey-item:hover .journey-number{
-    opacity:.08;
-    transform:translateX(-8px);
+    opacity:.07;
+    transform:translateX(-6px);
 }
 
-.journey-number{
-    position:absolute;
-    right:0;
-    top:-20px;
-    font-size:6.5rem;
-    font-weight:900;
-    color:var(--primary);
-    opacity:.04;
-    pointer-events:none;
-    transition:.3s;
+.journey-number {
+  position: absolute;
+  right: 30px;
+  top: -20px;
+
+  font-size: 6.5rem;
+  font-weight: 900;
+  color: var(--primary);
+
+  opacity: 0.025;
+  pointer-events: none;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .journey-period {
