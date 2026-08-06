@@ -813,7 +813,6 @@ nav ul li a:hover::after {
   line-height: 1.7;
 }
 
-
 @media (max-width: 900px) {
   .skills-grid {
     grid-template-columns: 1fr;
