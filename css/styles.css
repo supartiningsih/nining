@@ -61,7 +61,7 @@ p{
 hr {
   width: 60px;
   border: none;
-  border-top: 4px solid var(--accent);
+  border-top: 3px solid var(--accent);
   margin: 30px auto;
 }
 
