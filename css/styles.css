@@ -611,16 +611,13 @@ nav ul li a:hover::after {
     letter-spacing: -0.5px;
 }
 
-.section-subtitle{
-    margin-top:-8px;
-    margin-bottom:36px;
-
-    color:var(--secondary);
-
-    font-size:1rem;
-    line-height:1.7;
-
-    max-width:650px;
+.section-subtitle {
+  margin-top: -8px;
+  margin-bottom: 36px;
+  color: red;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 650px;
 }
 
 
