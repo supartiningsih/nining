@@ -616,9 +616,8 @@ nav ul li a:hover::after {
   margin-bottom: 36px;
   color: var(--secondary);
   font-size: 1rem;
-
   line-height: 1.7;
-  max-width: 650px;
+  max-width: 850px;
 }
 
 
