@@ -486,13 +486,22 @@ a:hover {
   display: block;
 }
 
-.middle-container {
-  background-color: white;
-  border-radius: 10px;
-  width: 75%;
-  margin: 0 auto 60px;
-}
 
+.middle-container{
+    position:relative;
+    background: var(--surface);
+
+    width:75%;
+    margin:-10px auto 60px;
+
+    border-radius:14px;
+
+    box-shadow:
+        0 10px 35px rgba(15,23,42,.05),
+        0 2px 8px rgba(15,23,42,.03);
+
+    overflow:hidden;
+}
 
 
 nav {
