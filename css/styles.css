@@ -306,6 +306,10 @@ a:hover {
     rotate(-6deg);
 }
 
+.journey-item:hover .journey-content h3{
+    color:var(--accent);
+}
+
 .journey-item:hover .journey-marker i {
   color: #ffffff;
 }
@@ -360,6 +364,7 @@ a:hover {
   margin: 0 0 12px;
   color: var(--primary);
   font-size: 1.35rem;
+  transition: color .25s ease;
 }
 
 .journey-content p {
@@ -372,7 +377,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 18px;
+  margin-top: 24px;
 }
 
 .journey-tags span{
@@ -866,4 +871,27 @@ nav ul li a:hover::after {
     height: 46px;
     font-size: 1rem;
   }
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:1200px){
+
+    .journey-number{
+        font-size:5rem;
+        right:20px;
+        opacity:.03;
+    }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:900px){
+    .journey-number{
+        display:none;
+    }
 }
