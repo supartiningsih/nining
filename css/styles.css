@@ -301,7 +301,9 @@ a:hover {
 
 .journey-item:hover .journey-marker {
   background-color: var(--accent);
-  transform: scale(1.06);
+  transform: 
+    scale(1.06)
+    rotate(-6deg);
 }
 
 .journey-item:hover .journey-marker i {
@@ -311,10 +313,31 @@ a:hover {
 .journey-content {
   padding: 6px 0 28px;
   border-bottom: 1px solid var(--border);
+  transition:
+        transform .3s ease,
+        border-color .3s ease;
+  position:relative;
 }
 
 .journey-item:last-child .journey-content {
   border-bottom: none;
+}
+
+.journey-item:hover .journey-number{
+    opacity:.08;
+    transform:translateX(-8px);
+}
+
+.journey-number{
+    position:absolute;
+    right:0;
+    top:-20px;
+    font-size:6.5rem;
+    font-weight:900;
+    color:var(--primary);
+    opacity:.04;
+    pointer-events:none;
+    transition:.3s;
 }
 
 .journey-period {
@@ -347,24 +370,23 @@ a:hover {
   margin-top: 18px;
 }
 
-.journey-tags span {
-  padding: 6px 10px;
-  background-color: var(--soft-accent);
-  color: var(--accent-hover);
-  border-radius: 6px;
-  font-size: 0.8rem;
-  font-weight: 600;
-
-  transition:
-    background-color 0.25s ease,
-    color 0.25s ease,
-    transform 0.25s ease;
+.journey-tags span{
+    padding:7px 12px;
+    background:#ffffff;
+    color:var(--secondary);
+    border:1px solid var(--border);
+    box-shadow:0 2px 6px rgba(15,23,42,.03);
+    border-radius:30px;
+    font-size:.8rem;
+    font-weight:600;
+    transition:all .25s ease;
 }
 
-.journey-tags span:hover {
-  background-color: var(--accent);
-  color: #ffffff;
-  transform: translateY(-2px);
+.journey-tags span:hover{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#ffffff;
+    transform:translateY(-2px);
 }
 
 /* Journey icon colors */
