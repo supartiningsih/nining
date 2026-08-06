@@ -258,7 +258,6 @@ a:hover {
   top: 12px;
   bottom: 12px;
   left: 29px;
-
   width: 2px;
   background-color: var(--border);
 }
@@ -268,7 +267,6 @@ a:hover {
   display: grid;
   grid-template-columns: 60px 1fr;
   gap: 24px;
-
   padding-bottom: 42px;
 }
 
@@ -291,19 +289,24 @@ a:hover {
   border: 2px solid var(--accent);
   border-radius: 50%;
 
-  color: var(--accent);
   font-size: 1.15rem;
 
   transition:
     background-color 0.25s ease,
-    color 0.25s ease,
     transform 0.25s ease;
+}
+
+.journey-marker i {
+  transition: color 0.25s ease;
 }
 
 .journey-item:hover .journey-marker {
   background-color: var(--accent);
-  color: #ffffff;
   transform: scale(1.06);
+}
+
+.journey-item:hover .journey-marker i {
+  color: #ffffff;
 }
 
 .journey-content {
@@ -347,10 +350,8 @@ a:hover {
 
 .journey-tags span {
   padding: 6px 10px;
-
   background-color: var(--soft-accent);
   color: var(--accent-hover);
-
   border-radius: 6px;
   font-size: 0.8rem;
   font-weight: 600;
@@ -367,7 +368,33 @@ a:hover {
   transform: translateY(-2px);
 }
 
+/* Journey icon colors */
 
+.phase-foundation .journey-marker i {
+  color: #65a30d;
+}
+
+.phase-network .journey-marker i {
+  color: #2563eb;
+}
+
+.phase-leadership .journey-marker i {
+  color: #f97316;
+}
+
+.phase-telecom .journey-marker i {
+  color: #0f766e;
+}
+
+.phase-turkiye .journey-marker i {
+  color: #0891b2;
+}
+
+.phase-future .journey-marker i {
+  color: var(--primary);
+}
+
+/* HOBBY LAMA */
 
 .hobbies-row {
   width: 70%;
