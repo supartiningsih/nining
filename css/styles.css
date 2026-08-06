@@ -228,7 +228,7 @@ a:hover {
   background-color: var(--accent);
   color: white;
   border-color: var(--accent-hover);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 18px rgba(193,95,124,.25);
 }
 
