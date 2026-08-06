@@ -140,6 +140,10 @@ a:hover {
   padding: 50px 0 20px;
 }
 
+/* ===========================
+   SKILL
+=========================== */
+
 .skills {
   width: 85%;
   margin: 0 auto;
@@ -231,6 +235,139 @@ a:hover {
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 18px rgba(193,95,124,.25);
 }
+
+/* ===========================
+   CAREER JOURNEY
+=========================== */
+
+.journey {
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0 70px;
+  text-align: left;
+}
+
+.journey-timeline {
+  position: relative;
+  margin-top: 42px;
+}
+
+.journey-timeline::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 29px;
+
+  width: 2px;
+  background-color: var(--border);
+}
+
+.journey-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 24px;
+
+  padding-bottom: 42px;
+}
+
+.journey-item:last-child {
+  padding-bottom: 0;
+}
+
+.journey-marker {
+  position: relative;
+  z-index: 1;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--surface);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+
+  color: var(--accent);
+  font-size: 1.15rem;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.journey-item:hover .journey-marker {
+  background-color: var(--accent);
+  color: #ffffff;
+  transform: scale(1.06);
+}
+
+.journey-content {
+  padding: 6px 0 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.journey-item:last-child .journey-content {
+  border-bottom: none;
+}
+
+.journey-period {
+  display: inline-block;
+  margin-bottom: 8px;
+
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.journey-content h3 {
+  margin: 0 0 12px;
+  color: var(--primary);
+  font-size: 1.35rem;
+}
+
+.journey-content p {
+  max-width: 760px;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.journey-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.journey-tags span {
+  padding: 6px 10px;
+
+  background-color: var(--soft-accent);
+  color: var(--accent-hover);
+
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.journey-tags span:hover {
+  background-color: var(--accent);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
 
 .hobbies-row {
   width: 70%;
@@ -325,6 +462,9 @@ a:hover {
   color: var(--accent);
 }
 
+/* ===============================
+   BOTTOM CONTAINER AND FOOTER
+================================ */
 
 .bottom-container {
   background-color: #0f172a;
@@ -392,6 +532,10 @@ a:hover {
 
 }
 
+/* ===========================
+   TOP CONTAINER
+=========================== */
+
 .top-container {
   width: 90%;
   max-width: 1100px;
@@ -406,6 +550,10 @@ a:hover {
 
   text-align: left;
 }
+
+/* ===========================
+   HERO TEXT
+=========================== */
 
 .hero-text h1 {
   font-size: clamp(3rem, 6vw, 4.8rem);
@@ -486,6 +634,9 @@ a:hover {
   display: block;
 }
 
+/* ===========================
+   MIDDLE CONTAINER
+=========================== */
 
 .middle-container{
     position:relative;
@@ -503,6 +654,9 @@ a:hover {
     overflow:hidden;
 }
 
+/* ===========================
+   NAV MENU BAR
+=========================== */
 
 nav {
   position: fixed;
@@ -641,4 +795,27 @@ nav ul li a:hover::after {
   .skill-card {
     min-height: auto;
   }
+
+  .journey {
+  width: 90%;
+  }
+  
+  .journey-timeline::before {
+    left: 23px;
+  }
+  
+  .journey-item {
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+  }
+  
+  .journey-marker {
+    width: 46px;
+    height: 46px;
+    font-size: 1rem;
+  }
 }
+
+
+
+
