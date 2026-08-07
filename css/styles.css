@@ -242,7 +242,32 @@ a:hover {
   color: var(--accent);
   font-size: 2rem;
   margin-bottom: 22px;
+  opacity: 0;
+  transform: scale(0.8);
+
+  transition:
+    opacity .45s ease,
+    transform .45s ease,
+    color .25s ease;
 }
+
+.skill-reveal.active .skill-card-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.skill-card:nth-child(1) .skill-card-icon {
+  transition-delay: .20s;
+}
+
+.skill-card:nth-child(2) .skill-card-icon {
+  transition-delay: .35s;
+}
+
+.skill-card:nth-child(3) .skill-card-icon {
+  transition-delay: .50s;
+}
+
 
 .skill-card h3 {
   margin: 0 0 14px;
@@ -294,6 +319,49 @@ a:hover {
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 18px rgba(193,95,124,.25);
 }
+
+/* ===========================
+   SKILLS CASCADE ANIMATION
+=========================== */
+
+.skill-reveal {
+  opacity: 0;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.skill-left {
+  transform: translateX(-45px);
+}
+
+.skill-up {
+  transform: translateY(35px);
+}
+
+.skill-right {
+  transform: translateX(45px);
+}
+
+.skill-reveal.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Cascade delay */
+
+.skill-card:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.skill-card:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.skill-card:nth-child(3) {
+  transition-delay: 0.30s;
+}
+
 
 /* ===========================
    CAREER JOURNEY
@@ -450,7 +518,32 @@ a:hover {
     font-size:.8rem;
     font-weight:600;
     transition:all .25s ease;
+
+    opacity:0;
+    transform:translateY(10px);
+
+    transition:
+        opacity .4s ease,
+        transform .4s ease,
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
 }
+
+.reveal.active .journey-tags span{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.journey-tags span:nth-child(1){ transition-delay:.65s; }
+.journey-tags span:nth-child(2){ transition-delay:.73s; }
+.journey-tags span:nth-child(3){ transition-delay:.81s; }
+.journey-tags span:nth-child(4){ transition-delay:.89s; }
+.journey-tags span:nth-child(5){ transition-delay:.97s; }
+.journey-tags span:nth-child(6){ transition-delay:1.05s; }
+.journey-tags span:nth-child(7){ transition-delay:1.13s; }
+.journey-tags span:nth-child(8){ transition-delay:1.21s; }
 
 .journey-tags span:hover{
     background:var(--accent);
@@ -484,6 +577,54 @@ a:hover {
 .phase-future .journey-marker i {
   color: var(--primary);
 }
+
+
+/* Journey Reveal Animation */
+
+.journey-marker,
+.journey-period,
+.journey-content h3,
+.journey-content p,
+.journey-tags {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity .6s ease,
+        transform .6s ease;
+}
+
+
+.reveal.active .journey-marker,
+.reveal.active .journey-period,
+.reveal.active .journey-content h3,
+.reveal.active .journey-content p,
+.reveal.active .journey-tags {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.journey-marker {
+    transition-delay: 0ms;
+}
+
+.journey-period {
+    transition-delay: .1s;
+}
+
+.journey-content h3 {
+    transition-delay: .25s;
+}
+
+.journey-content p {
+    transition-delay: .45s;
+}
+
+.journey-tags {
+    transition-delay: .65s;
+}
+
+
 
 /* HOBBY LAMA */
 
