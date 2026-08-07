@@ -965,3 +965,20 @@ nav ul li a:hover::after {
         display:none;
     }
 }
+
+/* ===========================
+   Scroll Reveal
+=========================== */
+
+.reveal{
+    opacity:0;
+    transform:translateY(45px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
