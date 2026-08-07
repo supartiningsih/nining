@@ -554,10 +554,16 @@ a:hover {
 
 /* Highlight Future Tag */
 
-.highlight-tag{
-    background:var(--accent);
-    color:#ffffff !important;
-    border-color:var(--accent);
+.journey-tags .highlight-tag {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+}
+
+.journey-tags .highlight-tag:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    color: #ffffff;
 }
 
 /* Journey icon colors */
