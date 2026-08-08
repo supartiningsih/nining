@@ -70,14 +70,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #2A764C;
-  font-weight: bold;
-  transition-duration: 2s;
-
-}
-
-
 
 .section-icon{
     color: var(--primary);
@@ -131,16 +123,6 @@ a:hover {
   animation-direction: alternate-reverse;
 }
 
-/* =====================
-          PROFILE
-======================== */
-
-.profile {
-  text-align: left;
-  width: 70%;
-  margin: 0 auto;
-  padding: 50px 0 20px;
-}
 
 /* ===========================
    ABOUT SECTION
@@ -560,8 +542,7 @@ a:hover {
     border-radius:30px;
     font-size:.8rem;
     font-weight:600;
-    transition:all .25s ease;
-
+    
     opacity:0;
     transform:translateY(10px);
 
@@ -988,11 +969,6 @@ a:hover {
   display: block;
 }
 
-.hero-image {
-  width: min(340px, 100%);
-  height: auto;
-  display: block;
-}
 
 /* ===========================
    MIDDLE CONTAINER
@@ -1146,7 +1122,68 @@ nav ul li a:hover::after {
   line-height: 1.7;
 }
 
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+
+/* TABLET */
+@media (max-width: 1200px) {
+
+  .journey-number {
+    font-size: 5rem;
+    right: 20px;
+    opacity: .03;
+  }
+
+}
+
+
+/* TABLET / MOBILE */
 @media (max-width: 900px) {
+
+  /* HERO */
+
+  .top-container {
+    width: 85%;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 130px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: none;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image-wrapper {
+    justify-content: center;
+  }
+
+  /* ABOUT */
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-copy {
+    padding-right: 0;
+    border-right: none;
+  }
+
+
+  /* SKILLS */
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -1155,148 +1192,36 @@ nav ul li a:hover::after {
     min-height: auto;
   }
 
+
+  /* JOURNEY */
+
   .journey {
-  width: 90%;
+    width: 90%;
   }
-  
+
   .journey-timeline::before {
     left: 23px;
   }
-  
+
   .journey-item {
     grid-template-columns: 48px 1fr;
     gap: 18px;
   }
-  
+
   .journey-marker {
     width: 46px;
     height: 46px;
     font-size: 1rem;
   }
-}
 
-.about-highlights {
-  grid-template-columns: repeat(2, minmax(0, 1fr));    
-}
-
-@media (max-width: 560px) {
-  .about-highlights {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===========================
-   TABLET
-=========================== */
-
-@media (max-width:1200px){
-
-    .journey-number{
-        font-size:5rem;
-        right:20px;
-        opacity:.03;
-    }
-}
-
-/* ===========================
-   MOBILE
-=========================== */
-
-@media (max-width:900px){
-    .journey-number{
-        display:none;
-    }
-}
-
-@media (max-width: 900px) {
-
-  .top-container {
-    width: 85%;
-
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-
-    padding-top: 130px;
-    text-align: center;
-  }
-
-  .hero-text {
-    max-width: none;
-  }
-
-  .hero-description {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .hero-image-wrapper {
-    justify-content: center;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
-
-  .about-copy {
-    padding-right: 0;
-    border-right: none;
+  .journey-number {
+    display: none;
   }
 
 }
 
 
-@media (max-width: 900px) {
-
-  .top-container {
-    width: 85%;
-
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-
-    padding-top: 130px;
-    text-align: center;
-  }
-
-  .hero-text {
-    max-width: none;
-  }
-
-  .hero-description {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .hero-image-wrapper {
-    justify-content: center;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
-
-  .about-copy {
-    padding-right: 0;
-    border-right: none;
-  }
-
-}
-
-/* ===========================
-   MOBILE KECIL
-=========================== */
-
+/* MOBILE KECIL */
 @media (max-width: 600px) {
 
   .about-strengths {
@@ -1312,6 +1237,7 @@ nav ul li a:hover::after {
   }
 
 }
+
 
 /* ===========================
    Scroll Reveal
