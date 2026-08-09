@@ -1139,21 +1139,53 @@ nav ul li a:hover::after {
 }
 
 
-/* TABLET / MOBILE */
+/* ===========================
+   TABLET / MOBILE
+=========================== */
+
 @media (max-width: 900px) {
+
+  /* GENERAL */
+
+  body {
+    overflow-x: hidden;
+  }
+
+
+  /* NAVBAR */
+
+  nav {
+    padding: 18px 24px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
 
   /* HERO */
 
   .top-container {
-    width: 85%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+
     grid-template-columns: 1fr;
     gap: 40px;
+
     padding-top: 130px;
     text-align: center;
   }
 
   .hero-text {
     max-width: none;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2.6rem, 11vw, 3.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    margin: 10px 0 18px;
   }
 
   .hero-description {
@@ -1168,6 +1200,7 @@ nav ul li a:hover::after {
   .hero-image-wrapper {
     justify-content: center;
   }
+
 
   /* ABOUT */
 
@@ -1220,9 +1253,15 @@ nav ul li a:hover::after {
 
 }
 
+/* ===========================
+   MOBILE KECIL
+=========================== */
 
-/* MOBILE KECIL */
 @media (max-width: 600px) {
+
+  .hero-text h1 {
+    font-size: clamp(2.4rem, 10.5vw, 3.2rem);
+  }
 
   .about-strengths {
     grid-template-columns: 1fr;
@@ -1237,7 +1276,6 @@ nav ul li a:hover::after {
   }
 
 }
-
 
 /* ===========================
    Scroll Reveal
