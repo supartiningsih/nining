@@ -1122,6 +1122,40 @@ nav ul li a:hover::after {
   line-height: 1.7;
 }
 
+
+/* ===========================
+   MOBILE MENU BUTTON
+=========================== */
+
+.menu-toggle {
+  display: none;
+  width: 34px;
+  height: 28px;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  margin: 6px 0;
+
+  background: var(--primary);
+
+  border-radius: 10px;
+
+  transition:
+    transform .3s ease,
+    opacity .3s ease;
+}
+
+
 /* ===========================
    RESPONSIVE
 =========================== */
@@ -1155,13 +1189,88 @@ nav ul li a:hover::after {
   /* NAVBAR */
 
   nav {
-    padding: 18px 24px;
-  }
+  padding: 18px 24px;
+}
 
-  nav ul {
-    display: none;
-  }
+.menu-toggle {
+  display: block;
 
+  position: relative;
+  z-index: 1002;
+}
+
+nav ul {
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 0;
+
+  padding: 24px 0;
+  margin: 0;
+
+  background: rgba(255,255,255,.96);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  box-shadow: 0 14px 30px rgba(15,23,42,.08);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(-12px);
+
+  transition:
+    opacity .3s ease,
+    transform .3s ease,
+    visibility .3s ease;
+}
+
+nav ul.open {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+nav ul li {
+  width: 100%;
+}
+
+nav ul li a {
+  display: block;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 14px 28px;
+
+  text-align: left;
+
+  font-size: 1rem;
+}
+
+  /* Tampilan garis 3 datar jadi X */
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
   /* HERO */
 

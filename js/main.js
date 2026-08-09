@@ -64,3 +64,20 @@ const aboutObserver = new IntersectionObserver(
 aboutItems.forEach((item) => {
   aboutObserver.observe(item);
 });
+
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector("nav ul");
+const navLinks = document.querySelectorAll("nav ul a");
+
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active");
+  navMenu.classList.toggle("open");
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuToggle.classList.remove("active");
+    navMenu.classList.remove("open");
+  });
+});
