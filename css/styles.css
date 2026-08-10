@@ -1157,6 +1157,56 @@ nav ul li a:hover::after {
 
 
 /* ===========================
+   SCROLL TO TOP
+=========================== */
+
+.scroll-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: var(--accent);
+  color: #ffffff;
+
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 999;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+
+  box-shadow: 0 8px 20px rgba(15, 23, 42, .12);
+
+  transition:
+    opacity .3s ease,
+    transform .3s ease,
+    visibility .3s ease,
+    background .25s ease;
+}
+
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  background: var(--accent-hover);
+  transform: translateY(-3px);
+}
+
+/* ===========================
    RESPONSIVE
 =========================== */
 
@@ -1384,6 +1434,16 @@ nav ul li a {
     border-bottom: none;
   }
 
+}
+
+.scroll-top {
+  width: 42px;
+  height: 42px;
+
+  right: 18px;
+  bottom: 18px;
+
+  font-size: .9rem;
 }
 
 /* ===========================

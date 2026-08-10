@@ -81,3 +81,35 @@ navLinks.forEach((link) => {
     navMenu.classList.remove("open");
   });
 });
+
+// ===========================
+// SCROLL TO TOP
+// ===========================
+
+const scrollTopButton = document.querySelector(".scroll-top");
+
+if (scrollTopButton) {
+
+  window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 500) {
+      scrollTopButton.classList.add("show");
+    } else {
+      scrollTopButton.classList.remove("show");
+    }
+
+  });
+
+  scrollTopButton.addEventListener("click", () => {
+
+    console.log("scroll button clicked");
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+
+  });
+
+}
