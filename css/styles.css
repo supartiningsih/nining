@@ -949,6 +949,7 @@ a {
   content: "";
 
   position: absolute;
+
   width: 290px;
   height: 290px;
 
@@ -963,10 +964,12 @@ a {
   position: relative;
   z-index: 1;
 
-  width: min(310px, 100%);
+  width: min(330px, 100%);
   height: auto;
 
   display: block;
+
+  transform: translateY(18px);
 }
 
 
